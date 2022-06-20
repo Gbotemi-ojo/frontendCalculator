@@ -1,0 +1,266 @@
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+@media(max-width:450px){
+#calculatorPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(60,73,103);
+    width: 100vw;
+    height: 100vh;
+}
+#calculator{
+    display: flex;
+    flex-direction: column;
+    width: 88vw;
+    height: 88vh;
+    background-color: rgb(60,73,103);
+}
+#calculatorHeader{
+    display: flex;
+    width: 88vw;
+    height: 10vh;
+    color: white;
+    align-items: center;
+}
+.calcText{
+    color: white;
+}
+.themeText{
+    width: 48vw;
+    font-size: 25px;
+}
+.themeChoosers{
+    width: 38vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items:flex-end ;
+    font-size: 10px;
+}
+.themeNumbering{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3px;
+    font-size:10px;
+
+}
+.themeButtonContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.themeButtons{
+    display: flex;
+    border-radius: 20px;
+    background-color: rgb(35,44,67);
+    width: 18vw;
+    height: 6vh;
+    align-items: center;
+    justify-content: space-around;
+}
+.themeButtons button{
+    border-radius: 100%;
+    background-color: rgb(35,44,67);
+    color:rgb(35,44,67); ;
+    border: none;
+    height: 3vh;
+    width: 4vw;
+}
+
+#button1{
+    background: hsl(6, 63%, 50%)
+}
+#calculatorDisplay{
+    height: 20vh;
+    width: 88vw;
+    color: white;
+}
+#calculatorButtons{
+    height: 58vh;
+    width: 88vw;
+}
+/* calculatorHeader styling ends here */
+
+#calculatorDisplay{
+    display: flex;
+    flex-direction: column;
+    height:15vh ;
+    margin-top: 5vh;
+    background-color: rgb(24,32,52);
+    border-radius: 6px;
+    color: white;
+}
+.first-display{
+    width: 100%;
+    min-height: 50%;
+    text-align: right;
+    font-size: 26px;
+}
+.second-display{
+    width: 100%;
+    text-align: right;
+    min-height: 50%;
+}
+.secondDisplayContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    text-align: right;
+    min-height: 50%;
+}
+/* display styling ends here */
+#calculatorButtons{
+    margin-top: 5vh;
+    background-color: rgb(24,32,52);
+    display: flex;
+    flex-direction: column;
+}
+.buttonSection1{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.operands{
+    background: white;
+    color: rgb(68,75,90);
+    width: 18vw;
+    height: 7.3vh;
+    font-size: 23px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 0px rgb(180,165,151);
+    transition: all 0.2 ease;
+    font-weight: 900;
+}
+.operands:active{
+    box-shadow: none;
+}
+.additionBtn{
+    background: white;
+    color: rgb(68,75,90);
+    width: 18vw;
+    height: 7.3vh;
+    font-size: 23px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 0px rgb(180,165,151);
+    transition: all 0.2 ease;
+}
+.subtractionBtn{
+    background: white;
+    color: rgb(68,75,90);
+    width: 18vw;
+    height: 7.3vh;
+    font-size: 23px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 0px rgb(180,165,151);
+    transition: all 0.2 ease;
+}
+.multiplicationBtn{
+    background: white;
+    color: rgb(68,75,90);
+    width: 18vw;
+    height: 7.3vh;
+    font-size: 23px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 0px rgb(180,165,151);
+    transition: all 0.2 ease;
+}
+.divisionBtn{
+    background: white;
+    color: rgb(68,75,90);
+    width: 18vw;
+    height: 7.3vh;
+    font-size: 23px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 0px rgb(180,165,151);
+    transition: all 0.2 ease;
+}
+.decimalPoint{
+    color: rgb(68,75,90);
+    width: 18vw;
+    height: 7.3vh;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 0px rgb(180,165,151);
+    transition: all 0.2 ease;
+}
+.decimalPoint:active{
+    box-shadow: none;
+}
+.additionBtn:active{
+    box-shadow: none;
+}
+.subtractionBtn:active{
+    box-shadow: none;
+}
+.multiplicationBtn:active{
+    box-shadow: none;
+}
+.divisionBtn:active{
+    box-shadow: none;
+}
+.buttonSection2{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.buttonSection2 button{
+    width: 38vw;
+    height: 7.3vh;
+    border-radius: 5px;
+    border: none;
+}
+.equalsToBtn{
+    color: white;
+    background: hsl(6, 63%, 50%);
+    box-shadow: 0px 4px 0px hsl(6, 70%, 34%);
+    transition: all 0.2 ease;
+    font-size: 15px;
+    font-weight: 700;
+}
+.equalsToBtn:active{
+    box-shadow: none;
+}
+.allClear{
+    color: white;
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 4px 0px hsl(224, 28%, 35%);
+    transition: all 0.2 ease; 
+    font-size: 15px;
+    font-weight: 700;
+}
+.allClear:active{
+    box-shadow: none;
+}
+.deleteBtn{
+    color: white;
+    width: 18vw;
+    height: 7.3vh;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 4px 0px hsl(224, 28%, 35%);
+    transition: all 0.2 ease; 
+}
+.deleteBtn:active{
+    box-shadow: none;
+}
+
+}
