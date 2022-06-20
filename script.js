@@ -70,98 +70,98 @@ function firstTheme(){
     equalityBtn.style.boxShadow = "0px 4px 0px hsl(6, 70%, 34%)";
 }
 function secondTheme(){
-    calculatorPage.style.background 
-    calculator.style.background 
+    calculatorPage.style.background = "hsl(0, 0%, 90%)";
+    calculator.style.background = "hsl(0, 0%, 90%)";
     calculatorTexts.forEach(calculatorText => {
-        calculatorText.style.color 
+        calculatorText.style.color =  "hsl(60, 10%, 19%)";
     });
-    calculatorHeader.style.color
+    calculatorHeader.style.color = "hsl(60, 10%, 19%)";
     themeButtons.forEach(themeButton => {
-       themeButton.style.background 
+       themeButton.style.background = "hsl(0, 5%, 81%)";
     });
-    theme1.style.background 
-    theme2.style.background 
-    theme3.style.background 
+    theme1.style.background = "hsl(0, 5%, 81%)";
+    theme2.style.background = "hsl(25, 98%, 40%)";
+    theme3.style.background = "hsl(0, 5%, 81%)";
     //calculator header style change ends here
-    calculatorDisplay.style.background 
-    calculatorDisplay.style.color 
+    calculatorDisplay.style.background = "hsl(0, 0%, 93%)";
+    calculatorDisplay.style.color = "hsl(60, 10%, 19%)";
     // calculator display style ends here
-    calculatorButtons.style.background 
+    calculatorButtons.style.background = "hsl(0, 5%, 81%)"
     operands.forEach(operand => {
-        operand.style.background
-        operand.style.color 
-        operand.style.boxShadow 
+        operand.style.background = "hsl(45, 7%, 89%)";
+        operand.style.color =  "hsl(60, 10%, 19%)";
+        operand.style.boxShadow = "0px 4px 0px hsl(35, 11%, 61%)";
     });
-    deleteBtn.style.background 
-    deleteBtn.style.color 
-    deleteBtn.style.boxShadow 
-    additionBtn.style.background
-    additionBtn.style.color
-    additionBtn.style.boxShadow
-    subtractionBtn.style.background
-    subtractionBtn.style.color
-    subtractionBtn.style.boxShadow
-    decimalPoint.style.background
-    decimalPoint.style.color 
-    decimalPoint.style.boxShadow
-    divisionBtn.style.background 
-    divisionBtn.style.color 
-    divisionBtn.style.boxShadow 
-    multiplicationBtn.style.background
-    multiplicationBtn.style.color 
-    multiplicationBtn.style.boxShadow
-    allClear.style.background 
-    allClear.style.color
-    allClear.style.boxShadow 
-    equalityBtn.style.background
-    equalityBtn.style.color
-    equalityBtn.style.boxShadow
+    deleteBtn.style.background = "hsl(185, 42%, 37%)";
+    deleteBtn.style.color = "white"
+    deleteBtn.style.boxShadow = "0px 4px 0px hsl(185, 58%, 25%)"
+    additionBtn.style.background = "hsl(45, 7%, 89%)";
+    additionBtn.style.color =  "hsl(60, 10%, 19%)";
+    additionBtn.style.boxShadow =  "0px 4px 0px hsl(35, 11%, 61%)";
+    subtractionBtn.style.background = "hsl(45, 7%, 89%)";
+    subtractionBtn.style.color =  "hsl(60, 10%, 19%)";
+    subtractionBtn.style.boxShadow =  "0px 4px 0px hsl(35, 11%, 61%)";
+    decimalPoint.style.background = "hsl(45, 7%, 89%)";
+    decimalPoint.style.color =  "hsl(60, 10%, 19%)";
+    decimalPoint.style.boxShadow =  "0px 4px 0px hsl(35, 11%, 61%)";
+    divisionBtn.style.background = "hsl(45, 7%, 89%)";
+    divisionBtn.style.color =  "hsl(60, 10%, 19%)";
+    divisionBtn.style.boxShadow =  "0px 4px 0px hsl(35, 11%, 61%)";
+    multiplicationBtn.style.background = "hsl(45, 7%, 89%)";
+    multiplicationBtn.style.color =  "hsl(60, 10%, 19%)";
+    multiplicationBtn.style.boxShadow =  "0px 4px 0px hsl(35, 11%, 61%)";
+    allClear.style.background = "hsl(185, 42%, 37%)";
+    allClear.style.color = "white"
+    allClear.style.boxShadow = "0px 4px 0px hsl(185, 58%, 25%)";
+    equalityBtn.style.background = "hsl(25, 98%, 40%)";
+    equalityBtn.style.color = "white"
+    equalityBtn.style.boxShadow = "0px 4px 0px hsl(25, 99%, 27%)";
 }
 function thirdTheme(){
-    calculatorPage.style.background
-    calculator.style.background
+    calculatorPage.style.background = "hsl(268, 75%, 9%)"
+    calculator.style.background = "hsl(268, 75%, 9%)"
     calculatorTexts.forEach(calculatorText => {
-        calculatorText.style.color
+        calculatorText.style.color = "hsl(52, 100%, 62%)"
     });
-    calculatorHeader.style.color
+    calculatorHeader.style.color = "hsl(52, 100%, 62%)"
     themeButtons.forEach(themeButton => {
-       themeButton.style.background
+       themeButton.style.background = "hsl(268, 71%, 12%)"
     });
-    theme1.style.background 
-    theme2.style.background 
-    theme3.style.background 
+    theme1.style.background = "hsl(268, 71%, 12%)"
+    theme2.style.background = "hsl(268, 71%, 12%)"
+    theme3.style.background =  "hsl(177, 92%, 70%)"
     //calculator header style change ends here
-    calculatorDisplay.style.background
-    calculatorDisplay.style.color
+    calculatorDisplay.style.background = "hsl(268, 71%, 12%)"
+    calculatorDisplay.style.color = "hsl(52, 100%, 62%)"
     // calculator display style ends here
-    calculatorButtons.style.background
+    calculatorButtons.style.background = "hsl(268, 71%, 12%)"
     operands.forEach(operand => {
-        operand.style.background
-        operand.style.color
-        operand.style.boxShadow
+        operand.style.background = "hsl(268, 47%, 21%)"
+        operand.style.color = "hsl(52, 100%, 62%)"
+        operand.style.boxShadow = "0px 4px 0px hsl(290, 70%, 36%)"
     });
-    deleteBtn.style.background 
-    deleteBtn.style.color 
-    deleteBtn.style.boxShadow
-    additionBtn.style.background
-    additionBtn.style.color
-    additionBtn.style.boxShadow
-    subtractionBtn.style.background
-    subtractionBtn.style.color
-    subtractionBtn.style.boxShadow
-    decimalPoint.style.background
-    decimalPoint.style.color
-    decimalPoint.style.boxShadow 
-    divisionBtn.style.background
-    divisionBtn.style.color
-    divisionBtn.style.boxShadow 
-    multiplicationBtn.style.background
-    multiplicationBtn.style.color
-    multiplicationBtn.style.boxShadow
-    allClear.style.background 
-    allClear.style.color
-    allClear.style.boxShadow
-    equalityBtn.style.background
-    equalityBtn.style.color
-    equalityBtn.style.boxShadow
+    deleteBtn.style.background = "hsl(281, 89%, 26%)";
+    deleteBtn.style.color = "white" 
+    deleteBtn.style.boxShadow = "0px 4px 0px hsl(285, 91%, 52%)"
+    additionBtn.style.background = "hsl(268, 47%, 21%)"
+    additionBtn.style.color = "hsl(52, 100%, 62%)"
+    additionBtn.style.boxShadow = "0px 4px 0px hsl(290, 70%, 36%)"
+    subtractionBtn.style.background = "hsl(268, 47%, 21%)"
+    subtractionBtn.style.color = "hsl(52, 100%, 62%)"
+    subtractionBtn.style.boxShadow = "0px 4px 0px hsl(290, 70%, 36%)"
+    decimalPoint.style.background = "hsl(268, 47%, 21%)"
+    decimalPoint.style.color = "hsl(52, 100%, 62%)"
+    decimalPoint.style.boxShadow = "0px 4px 0px hsl(290, 70%, 36%)"
+    divisionBtn.style.background = "hsl(268, 47%, 21%)"
+    divisionBtn.style.color = "hsl(52, 100%, 62%)"
+    divisionBtn.style.boxShadow = "0px 4px 0px hsl(290, 70%, 36%)"
+    multiplicationBtn.style.background = "hsl(268, 47%, 21%)"
+    multiplicationBtn.style.color = "hsl(52, 100%, 62%)"
+    multiplicationBtn.style.boxShadow = "0px 4px 0px hsl(290, 70%, 36%)"
+    allClear.style.background = "hsl(281, 89%, 26%)"
+    allClear.style.color = "white"
+    allClear.style.boxShadow = "0px 4px 0px hsl(285, 91%, 52%)"
+    equalityBtn.style.background = "hsl(176, 100%, 44%)"
+    equalityBtn.style.color = "hsl(198, 20%, 13%)"
+    equalityBtn.style.boxShadow = "0px 4px 0px hsl(177, 92%, 70%)"
 }

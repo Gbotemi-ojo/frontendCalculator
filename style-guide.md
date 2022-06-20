@@ -43,13 +43,13 @@ The designs were created to the following widths:
 
 #### Keys
 
-- Dark moderate cyan (key background): hsl(185, 42%, 37%)
+- Dark moderate cyan (key background): hsl(185, 42%, 37%) //delete and reset button
 - Very dark cyan (key shadow): hsl(185, 58%, 25%)
 
-- Orange (key background, toggle): hsl(25, 98%, 40%)
+- Orange (key background, toggle): hsl(25, 98%, 40%) // equal to btn
 - Dark orange (key shadow): hsl(25, 99%, 27%)
 
-- Light grayish yellow (key background): hsl(45, 7%, 89%)
+- Light grayish yellow (key background): hsl(45, 7%, 89%)// numbers and addtion...
 - Dark grayish orange (key shadow): hsl(35, 11%, 61%)
 
 #### Text
