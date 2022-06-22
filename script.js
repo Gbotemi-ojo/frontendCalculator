@@ -171,6 +171,7 @@ let deleteButton = document.querySelector(".deleteBtn")
 // let calculatorDisplay = document.getElementById("calculatorDisplay");
 let secondDisplayContainer = document.querySelector(".secondDisplayContainer");
 let signs = document.querySelector(".signs");
+// let decimalPoint = document.querySelector(".decimalPoint")
 let NumberButton = document.querySelectorAll(".operands")
 let firstDisplay = document.querySelector(".first-display")
 let dummyDisplay = document.querySelector(".dummy-display")
