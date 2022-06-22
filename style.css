@@ -208,7 +208,8 @@ body{
     font-weight: 700;
     border-radius: 5px;
 }
-@media(min-width: 1200px) and (max-width:1440px){
+
+@media(min-width: 1200px){
     #calculator{
         width: 30vw;
     }
