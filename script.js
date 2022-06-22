@@ -165,3 +165,4 @@ function thirdTheme(){
     equalityBtn.style.color = "hsl(198, 20%, 13%)"
     equalityBtn.style.boxShadow = "0px 4px 0px hsl(177, 92%, 70%)"
 }
+// THE CALCULATOR CODE STARTS HERE
