@@ -166,3 +166,173 @@ function thirdTheme(){
     equalityBtn.style.boxShadow = "0px 4px 0px hsl(177, 92%, 70%)"
 }
 // THE CALCULATOR CODE STARTS HERE
+let clearButton = document.querySelector(".allClear")
+let deleteButton = document.querySelector(".deleteBtn")
+// let calculatorDisplay = document.getElementById("calculatorDisplay");
+let secondDisplayContainer = document.querySelector(".secondDisplayContainer");
+let signs = document.querySelector(".signs");
+let NumberButton = document.querySelectorAll(".operands")
+let firstDisplay = document.querySelector(".first-display")
+let dummyDisplay = document.querySelector(".dummy-display")
+let add = document.querySelector(".additionBtn")
+let subtract = document.querySelector(".subtractionBtn")
+let multiply = document.querySelector(".multiplicationBtn")
+let divide = document.querySelector(".divisionBtn")
+let operationButton = document.querySelector(".equalsToBtn")
+let secondDisplay = document.createElement("div");
+NumberButton.forEach(button => {
+   button.addEventListener("click",eachnumber)
+    function eachnumber(){
+      firstDisplay.textContent += button.textContent
+      add.disabled = false
+      subtract.disabled = false
+      multiply.disabled = false
+      divide.disabled = false
+    }
+});
+add.addEventListener("click",added)
+subtract.addEventListener("click",subtracted)
+multiply.addEventListener("click",multiplied)
+divide.addEventListener("click",divided)
+decimalPoint.addEventListener("click", decima)
+operationButton.addEventListener("click",operate)
+clearButton.addEventListener("click",allclear)
+deleteButton.addEventListener("click",deleteCurrentDisplay)
+function decima(){
+    firstDisplay.textContent += "."
+    if(firstDisplay.textContent.includes(".")){
+        decimalPoint.disabled = true
+    }
+    else{
+        decimalPoint.disabled = false
+    }
+}
+function deleteCurrentDisplay(){
+ firstDisplay.textContent = firstDisplay.textContent.substring(0, firstDisplay.textContent.length -1);
+}
+function allclear(){
+    firstDisplay.textContent = ""
+    secondDisplay.textContent = ""
+    signs.textContent = ""
+}
+add.disabled = true
+function added(){
+disableButtonRepeat()
+    if(firstDisplay.textContent !=="" && secondDisplay.textContent !== "" && signs.textContent !== ""){
+        calculate()
+        secondDisplay.textContent = firstDisplay.textContent
+        signs.textContent = "+"
+        firstDisplay.textContent = ""
+    }
+    else{
+        secondDisplayContainer.appendChild(secondDisplay);
+        //firstDisplay.parentNode.insertBefore(secondDisplay,firstDisplay);
+        secondDisplay.classList.toggle("second-display");
+        dummyDisplay.classList.remove("dummy-display");
+        secondDisplay.textContent =  firstDisplay.textContent;
+        signs.textContent = "+"
+      if(firstDisplay.textContent === "")return
+        else{
+            clearFirstDisplay()
+        } 
+    }
+}
+subtract.disabled = true
+function subtracted(){
+   disableButtonRepeat()
+    if(firstDisplay.textContent !=="" && secondDisplay.textContent !== "" && signs.textContent !== ""){
+        calculate()
+        secondDisplay.textContent = firstDisplay.textContent
+        signs.textContent = "-"
+        firstDisplay.textContent = ""
+    }
+    else{
+        secondDisplayContainer.appendChild(secondDisplay);
+        secondDisplay.classList.toggle("second-display");
+        dummyDisplay.classList.remove("dummy-display");
+        secondDisplay.textContent =  firstDisplay.textContent;
+        signs.textContent = "-"
+        if(firstDisplay.textContent === "")return
+        else{
+            clearFirstDisplay()
+        }
+    }
+}
+multiply.disabled = true
+function multiplied(){
+ disableButtonRepeat()
+    if(firstDisplay.textContent !=="" && secondDisplay.textContent !== "" && signs.textContent !== ""){
+        calculate()
+        secondDisplay.textContent = firstDisplay.textContent
+        signs.textContent = "X"
+        firstDisplay.textContent = ""
+    }
+    else{
+        secondDisplayContainer.appendChild(secondDisplay);
+    secondDisplay.classList.toggle("second-display");
+    dummyDisplay.classList.remove("dummy-display");
+    secondDisplay.textContent =  firstDisplay.textContent;
+    signs.textContent = "X"
+    if(firstDisplay.textContent === "")return
+    else{
+        clearFirstDisplay()
+    } 
+    }
+}
+divide.disabled = true
+function divided(){
+    disableButtonRepeat()
+    if(firstDisplay.textContent !=="" && secondDisplay.textContent !== "" && signs.textContent !== ""){
+        calculate()
+        secondDisplay.textContent = firstDisplay.textContent
+        signs.textContent = "÷"
+        firstDisplay.textContent = ""
+    }
+    else{
+        secondDisplayContainer.appendChild(secondDisplay);
+        secondDisplay.classList.toggle("second-display");
+        dummyDisplay.classList.remove("dummy-display");
+        secondDisplay.textContent =  firstDisplay.textContent;
+        signs.textContent = "÷"
+        if(firstDisplay.textContent === "")return
+        else{
+            clearFirstDisplay()
+        }
+    }
+}
+ function operate(){
+    calculate()
+ }
+function clearFirstDisplay(){
+    firstDisplay.textContent = ""
+}
+ function calculate(){
+    let autocalculate;
+     if(signs.textContent === "+"){
+     autocalculate = +secondDisplay.textContent + +firstDisplay.textContent
+     }
+     else if(signs.textContent === "-"){
+     autocalculate = +secondDisplay.textContent - +firstDisplay.textContent
+     }
+     else if(signs.textContent === "X"){
+        autocalculate = +secondDisplay.textContent * +firstDisplay.textContent
+     }
+     else if(signs.textContent === "÷"){
+        autocalculate = +secondDisplay.textContent / +firstDisplay.textContent
+     }
+     firstDisplay.textContent = autocalculate;
+     secondDisplay.textContent = ""
+     signs.textContent = ""
+ }
+ function signscalculate(){
+     if(firstDisplay.textContent !=="" && secondDisplay.textContent !== "" && signs.textContent !== ""){
+         calculate()
+     }
+ }
+function disableButtonRepeat(){
+    add.disabled = true
+    divide.disabled = true
+    subtract.disabled = true
+    multiply.disabled = true
+    decimalPoint.disabled = false
+}
