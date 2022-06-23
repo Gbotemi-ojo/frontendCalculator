@@ -216,6 +216,10 @@ function allclear(){
     secondDisplay.textContent = ""
     signs.textContent = ""
     decimalPoint.disabled = false
+    add.disabled = true
+    divide.disabled = true
+    subtract.disabled = true
+    multiply.disabled = true
 }
 add.disabled = true
 function added(){
