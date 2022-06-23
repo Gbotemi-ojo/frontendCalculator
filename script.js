@@ -215,6 +215,7 @@ function allclear(){
     firstDisplay.textContent = ""
     secondDisplay.textContent = ""
     signs.textContent = ""
+    decimalPoint.disabled = false
 }
 add.disabled = true
 function added(){
@@ -325,11 +326,11 @@ function clearFirstDisplay(){
      secondDisplay.textContent = ""
      signs.textContent = ""
  }
- function signscalculate(){
-     if(firstDisplay.textContent !=="" && secondDisplay.textContent !== "" && signs.textContent !== ""){
-         calculate()
-     }
- }
+ //function continiouscalculation(){
+   //  if(firstDisplay.textContent !=="" && secondDisplay.textContent !== "" && signs.textContent !== ""){
+     //    calculate()
+    // }
+ //}
 function disableButtonRepeat(){
     add.disabled = true
     divide.disabled = true
